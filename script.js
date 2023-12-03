@@ -60,7 +60,7 @@ const cats= [
         "species" : "Bird?",
         "favFoods" : ["your soul"],
         "birthYear" : 2020,
-        "photo" : "https://www.top13.net/wp-content/uploads/2015/10/perfectly-timed-cat-photos-funny-cover.jpg"
+        "photo" : "https://www.boredpanda.com/blog/wp-content/uploads/2016/08/cute-kittens-33-57b31e94e94e6__605.jpg"
     },
     {
         "name" : "El Taco",
@@ -81,7 +81,7 @@ const cats= [
         "species" : "Tiny Cat",
         "favFoods" : ["milk"],
         "birthYear" : 2021,
-        "photo" : "https://i.ytimg.com/vi/ZKBlMWI6nO4/maxresdefault.jpg"
+        "photo" : "https://expertphotography.b-cdn.net/wp-content/uploads/2019/11/Cute-Kitten-Picture-unexpected.jpg"
     },
     {
         "name" : "Tiger",
