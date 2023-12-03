@@ -1,13 +1,15 @@
 :root {
   --coral: #f05d5e;
   --teal: #0f7173;
-  --light: #e7ecef;
-  --dark: #272932;
+  --light: #f9f7f5;
+  --dark: #100801;
   --camel: #d8a47f;
 }
 
 body {
-  background-color: var(--light);
+    background-color: var(--light);
+    color: var(--dark);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .card-container {
@@ -15,7 +17,7 @@ body {
   flex-wrap: wrap;
   max-width: 80rem;
   justify-content: center;
-  outline: solid yellow 2px;
+  /* outline: solid yellow 2px; */
   margin: auto;
 }
 
@@ -23,7 +25,7 @@ body {
   width: 17rem;
   padding: 10px;
   margin: 10px;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 
 h1 {
@@ -50,7 +52,7 @@ img {
 */
 @media (min-width: 700px) and (max-width: 999px) {
   html {
-    font-size: 1.75rem;
+    font-size: 1.65rem;
   }
   .card {
     width: calc(50% - 40px);
@@ -59,7 +61,7 @@ img {
 
 @media only screen and (max-width: 699px) {
   html {
-    font-size: 1.3em;
+    font-size: 1.8em;
   }
   .card {
     width: 100%;
@@ -71,7 +73,7 @@ img {
 
 @media (prefers-color-scheme: dark) {
     body {
-      background: #100801;
-      color: #faede2;
+        background-color: var(--dark);
+        color: var(--light);
     }
   }
