@@ -56,9 +56,9 @@ const cats= [
         "photo" : "https://images.theconversation.com/files/350865/original/file-20200803-24-50u91u.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop"
     },
     {
-        "name" : "Blobby",
-        "species" : "Bird?",
-        "favFoods" : ["your soul"],
+        "name" : "Purracula",
+        "species" : "Vampire Cat",
+        "favFoods" : ["blood"],
         "birthYear" : 2020,
         "photo" : "https://www.boredpanda.com/blog/wp-content/uploads/2016/08/cute-kittens-33-57b31e94e94e6__605.jpg"
     },
@@ -77,7 +77,7 @@ const cats= [
         "photo" : "https://i.pinimg.com/736x/1b/ef/b5/1befb5723f54627768e1d77642ca4d45.jpg"
     },
     {
-        "name" : "BoopySnoot",
+        "name" : "Sillylicks",
         "species" : "Tiny Cat",
         "favFoods" : ["milk"],
         "birthYear" : 2021,

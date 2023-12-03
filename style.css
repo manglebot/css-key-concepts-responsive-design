@@ -1,47 +1,77 @@
 :root {
-    --coral: #F05D5E;
-    --teal: #0F7173;
-    --light: #E7ECEF;
-    --dark: #272932;
-    --camel: #D8A47F;
+  --coral: #f05d5e;
+  --teal: #0f7173;
+  --light: #e7ecef;
+  --dark: #272932;
+  --camel: #d8a47f;
 }
 
 body {
-    background-color: var(--light);
+  background-color: var(--light);
 }
 
 .card-container {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 80rem;
+  justify-content: center;
+  outline: solid yellow 2px;
+  margin: auto;
 }
 
 .card {
-    padding: 10px;
-    margin: 10px;
-
-    outline:2px solid red;
+  width: 17rem;
+  padding: 10px;
+  margin: 10px;
+  outline: 2px solid red;
 }
 
 h1 {
-    font-size:2.25rem;
-} 
+  font-size: 2.25rem;
+}
 h2 {
-    font-size:1.75rem;
-} 
+  font-size: 1.75rem;
+}
 h3 {
-    font-size:1.25rem;
-} 
+  font-size: 1.25rem;
+}
 p {
-    font-size:1rem;
+  font-size: 1.5rem;
 }
 
 img {
-    width: 250px;
+  width: 250px;
 }
 
-@media only screen and (max-width: 700px) {
-    html{
-        font-size: 9em;
+/* 
+    note:
+    I was torn here between using 44% for .card width or calc, both look the same. 
+    Used calc as it's new to me! (and seems more powerful) 
+*/
+@media (min-width: 700px) and (max-width: 999px) {
+  html {
+    font-size: 1.75rem;
+  }
+  .card {
+    width: calc(50% - 40px);
+  }
+}
+
+@media only screen and (max-width: 699px) {
+  html {
+    font-size: 1.3em;
+  }
+  .card {
+    width: 100%;
+  }
+  .cat-ipsum {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+      background: #100801;
+      color: #faede2;
     }
-
-}
+  }
