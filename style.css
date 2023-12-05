@@ -2,22 +2,74 @@
   --coral: #f05d5e;
   --teal: #0f7173;
   --light: #f9f7f5;
+  --medium: #e0d1c2;
   --dark: #100801;
   --camel: #d8a47f;
 }
 
 body {
-    background-color: var(--light);
-    color: var(--dark);
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: var(--light);
+  color: var(--dark);
+  font-family: "Annie Use Your Telescope", "Lucida Sans", "Lucida Sans Regular",
+    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin: 0;
 }
 
+nav {
+  width: 100%;
+  background-color: var(--medium);
+  padding-left: 30px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+  padding: 0;
+}
+
+.logo {
+  display: inline-block;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-item a {
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: var(--dark);
+}
+
+.nav-item:hover {
+  background-color: var(--light);
+}
+
+.nav-item:hover a {
+  color: var(--dark);
+}
+
+.img__logo {
+  width: 175px;
+  height: auto;
+  vertical-align: middle;
+}
+
+.cat-ipsum {
+  width: 80vw;
+  text-align: center;
+  margin: auto;
+}
+
+/* card styles */
 .card-container {
   display: flex;
   flex-wrap: wrap;
   max-width: 80rem;
   justify-content: center;
-  /* outline: solid yellow 2px; */
   margin: auto;
 }
 
@@ -25,35 +77,46 @@ body {
   width: 17rem;
   padding: 10px;
   margin: 10px;
-  /* outline: 2px solid red; */
+  background-color: var(--light);
+  border: solid 3px var(--medium);
+  border-radius: 13px;
+  text-align: left;
 }
 
+/* note: the font (Annie Use Your Telescope) is a weird size, hence the larger font here  */
 h1 {
-  font-size: 2.25rem;
+  font-size: 4rem;
 }
 h2 {
-  font-size: 1.75rem;
+  font-size: 2rem;
 }
 h3 {
-  font-size: 1.25rem;
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 0;
+  margin: 0.1em 0 0.4em 0;
 }
 p {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  margin: 0.4em 0;
 }
 
-img {
-  width: 250px;
+.pet-pic {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: 50% 12%;
 }
 
-/* 
-    note:
-    I was torn here between using 44% for .card width or calc, both look the same. 
-    Used calc as it's new to me! (and seems more powerful) 
-*/
 @media (min-width: 700px) and (max-width: 999px) {
   html {
     font-size: 1.65rem;
   }
+  /* 
+    note:
+    I was torn here between using 44% for .card width or calc, both look the same. 
+    Used calc as it's new to me! (and seems more powerful) 
+*/
   .card {
     width: calc(50% - 40px);
   }
@@ -72,8 +135,12 @@ img {
 }
 
 @media (prefers-color-scheme: dark) {
-    body {
-        background-color: var(--dark);
-        color: var(--light);
-    }
+  body {
+    background-color: var(--dark);
+    color: var(--light);
   }
+
+  .card {
+    color: var(--dark);
+  }
+}
