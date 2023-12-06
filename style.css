@@ -1,10 +1,9 @@
 :root {
-  --coral: #f05d5e;
-  --teal: #0f7173;
   --light: #f9f7f5;
   --medium: #e0d1c2;
   --dark: #100801;
-  --camel: #d8a47f;
+  --brown: #2b1f1f;
+  --white: #fff;
 }
 
 body {
@@ -32,23 +31,23 @@ nav {
   display: inline-block;
 }
 
-.nav-links {
+.nav__links {
   list-style: none;
   display: flex;
 }
 
-.nav-item a {
+.nav__anchor {
   display: inline-block;
   padding: 10px 15px;
   text-decoration: none;
   color: var(--dark);
 }
 
-.nav-item:hover {
+.nav__item:hover {
   background-color: var(--light);
 }
 
-.nav-item:hover a {
+.nav__anchor:hover {
   color: var(--dark);
 }
 
@@ -58,7 +57,7 @@ nav {
   vertical-align: middle;
 }
 
-.cat-ipsum {
+.cat__description {
   width: 80vw;
   text-align: center;
   margin: auto;
@@ -77,7 +76,7 @@ nav {
   width: 17rem;
   padding: 10px;
   margin: 10px;
-  background-color: var(--light);
+  background-color: var(--white);
   border: solid 3px var(--medium);
   border-radius: 13px;
   text-align: left;
@@ -105,20 +104,15 @@ p {
   width: 100%;
   height: 250px;
   object-fit: cover;
-  object-position: 50% 12%;
+  object-position: 50% 34%;
 }
 
 @media (min-width: 700px) and (max-width: 999px) {
   html {
     font-size: 1.65rem;
   }
-  /* 
-    note:
-    I was torn here between using 44% for .card width or calc, both look the same. 
-    Used calc as it's new to me! (and seems more powerful) 
-*/
   .card {
-    width: calc(50% - 40px);
+    width: calc(49% - 40px);
   }
 }
 
@@ -126,11 +120,14 @@ p {
   html {
     font-size: 1.8em;
   }
+  .cat__description {
+    display: none;
+  }
   .card {
     width: 100%;
   }
-  .cat-ipsum {
-    display: none;
+  .pet-pic {
+    height: 350px;
   }
 }
 
@@ -141,6 +138,6 @@ p {
   }
 
   .card {
-    color: var(--dark);
+    background-color: var(--brown);
   }
 }
